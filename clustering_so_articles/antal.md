@@ -50,6 +50,9 @@ Questi articoli vengono trattati con attenzione a parte.
 
 ![alt text](image.png)
 
+#### Proiezione 2D dei principali componenti
+L'immagine distribuisce sul piano cartesiano gli articoli a seconda di etichette: outliers, articoli da tenere e articoli con valori di fatturato estremi. 
+Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rappresentano 1/3. 
 ![alt text](image-1.png)
 
 ### 4. Raggruppamento e Prioritizzazione Visiva
