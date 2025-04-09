@@ -57,6 +57,7 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
 
 ### 4. Raggruppamento e Prioritizzazione Visiva
 
+#### Step 1: focus su articoli ordinari (non outliers)
 - Considerando le diverse variabili insieme, abbiamo rappresentato graficamente gli articoli per identificare quelli più vicini al "profilo ideale":
   - Vendite regolari
   - Costi contenuti
@@ -73,6 +74,7 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
 
 ## 📊 Risultato Finale
 
+#### Step 2: inclusione du articoli con vendite estreme. 
 - Una lista pulita di articoli, etichettati come:
   - "Top Candidate" - Migliori candidati per essere mantenuti a stock
   - "Good Candidate" - Da considerare
@@ -81,6 +83,9 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
 
 ![alt text](image-4.png)
 
+#### Proiezione in 2D dei candidati da mantenere a stock
+L'immagine plotta e raggruppa a seconda delle variabili considerate le 4 'zone'.
+Una revisione manuale degli articoli e delle quantità puo informare la produzione sugli articoli e i volumi da tenere a magazzino.
 ![alt text](image-3.png)
 ---
 
