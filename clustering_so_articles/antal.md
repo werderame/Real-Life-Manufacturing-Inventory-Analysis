@@ -87,6 +87,7 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
 L'immagine plotta e raggruppa a seconda delle variabili considerate le 4 'zone'.
 Una revisione manuale degli articoli e delle quantità puo informare la produzione sugli articoli e i volumi da tenere a magazzino.
 ![alt text](image-3.png)
+
 ---
 
 ## 🎯 Valore per il Business
