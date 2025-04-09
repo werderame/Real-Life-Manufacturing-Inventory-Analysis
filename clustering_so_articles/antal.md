@@ -34,7 +34,10 @@ Questo progetto ha l'obiettivo di identificare e raggruppare gli articoli di ven
   - **Costo medio unitario**
   - **Lead time medio**
 
+#### Istogrammi delle principali variabili
+L'immagine mostra la distribuzione di tutti gli articoli combinati in raggruppamenti secondo le variabili principali. 
 ![alt text](image-5.png)
+
 
 ### 2. Identificazione di Outliers
 
