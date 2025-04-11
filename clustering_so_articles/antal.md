@@ -46,8 +46,8 @@ L'immagine mostra la distribuzione di tutti gli articoli combinati in raggruppam
   - **Articoli con costo unitario molto alto** (top 2%)
   - **Articoli "rumorosi"** (vendite instabili e poco frequenti)
 
-Questi articoli vengono trattati con attenzione a parte.
-![alt text](image.png)
+Questi articoli verranno trattati con attenzione a parte.
+
 
 #### Proiezione 2D dei principali componenti
 L'immagine distribuisce sul piano cartesiano gli articoli a seconda di etichette: outliers, articoli da tenere e articoli con valori di fatturato estremi. 
@@ -105,6 +105,7 @@ Lo screenshot mostra le prime 10 righe della tabella contenente:
   - 'Volatilità', 
   - 'Frequenza'
 - Categoria articolo
+
 ![alt text](image_output.png)
 
 Lo screenshot mostra il conteggio articoli per Tipo e Rating
