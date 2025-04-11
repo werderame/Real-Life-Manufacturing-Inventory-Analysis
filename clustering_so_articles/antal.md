@@ -47,13 +47,12 @@ L'immagine mostra la distribuzione di tutti gli articoli combinati in raggruppam
   - **Articoli "rumorosi"** (vendite instabili e poco frequenti)
 
 Questi articoli vengono trattati con attenzione a parte.
-
 ![alt text](image.png)
 
 #### Proiezione 2D dei principali componenti
 L'immagine distribuisce sul piano cartesiano gli articoli a seconda di etichette: outliers, articoli da tenere e articoli con valori di fatturato estremi. 
 Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rappresentano 1/3. 
-![alt text](image-1.png)
+![alt text](image-3.png)
 
 ### 4. Raggruppamento e Prioritizzazione Visiva
 
@@ -68,27 +67,48 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
   - **Good Candidate**
   - **Borderline**
 
-![alt text](image-2.png)
+![alt text](image-1.png)
 
 ---
 
 ## 📊 Risultato Finale
 
-#### Step 2: inclusione du articoli con vendite estreme. 
+#### Step 2: inclusione di articoli con vendite estreme. 
 - Una lista pulita di articoli, etichettati come:
   - "Top Candidate" - Migliori candidati per essere mantenuti a stock
   - "Good Candidate" - Da considerare
   - "Borderline" - Più rischiosi
   - Eventuale flag "High Sales" o "Noisy" per articoli particolari
 
-![alt text](image-4.png)
-
 #### Proiezione in 2D dei candidati da mantenere a stock
 L'immagine plotta e raggruppa a seconda delle variabili considerate le 4 'zone'.
 Una revisione manuale degli articoli e delle quantità puo informare la produzione sugli articoli e i volumi da tenere a magazzino.
-![alt text](image-3.png)
+![alt text](image-6.png)
+
+#### Istogrammi delle principali variabili con focus sugli articoli ordinari
+L'immagine mostra come le curve di distribuzione si normalizzino, infatti abbiamo eliminato gli outliers.
+![alt text](image-2.png)
 
 ---
+
+## 📚 Risorse
+
+#### Lista degli Articoli e dei Parametri
+Lo screenshot mostra le prime 10 righe della tabella contenente:
+- Codice articolo
+- Rating del Candidato da tenere a magazzino: ('top', 'good', 'borderline')
+- Parametri mensili:
+  - 'Volume di vendita', 
+  - 'Costo unitario', 
+  - 'Lead Time', 
+  - 'Fatturato', 
+  - 'Volatilità', 
+  - 'Frequenza'
+- Categoria articolo
+![alt text](image_output.png)
+
+Lo screenshot mostra il conteggio articoli per Tipo e Rating
+![alt text](image_overview.png)
 
 ## 🎯 Valore per il Business
 
