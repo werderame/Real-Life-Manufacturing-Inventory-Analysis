@@ -1,6 +1,5 @@
 # Raggruppamento Articoli di Vendita - Panoramica del Progetto
 
-Questo progetto ha l'obiettivo di identificare e raggruppare gli articoli di vendita sulla base della loro stabilità, frequenza di vendita, costo e altri parametri rilevanti. Ci aiuta a prioritizzare quali articoli sono i migliori candidati per essere mantenuti a stock. I risultati sono pensati per essere facilmente comprensibili anche da chi non ha un background tecnico.
 
 ---
 
@@ -8,6 +7,13 @@ Questo progetto ha l'obiettivo di identificare e raggruppare gli articoli di ven
 
 - **Scopo:** Trovare e classificare gli articoli che sono stabili e prevedibili nella vendita.
 - **Metodo:** Utilizzare dati storici per guidare decisioni più informate sulla gestione dello stock.
+
+---
+
+## 🧪 Tecniche utilizzate
+
+- **PCA:** Analisi delle componenti principali (riduzione della dimensionalità).
+- **Clustering:** Selezione di oggetti con caratteristiche omogenee a partire da un insieme di dati.
 
 ---
 
@@ -22,22 +28,24 @@ Questo progetto ha l'obiettivo di identificare e raggruppare gli articoli di ven
   - Lead time (tempo di consegna)
 
 - La selezione dei dati segue queste logiche:
-  - Limite dei dati tra gennaio 2023 fino a 2025-02 incl.
+  - Limite dei dati tra 2023-01 fino a 2025-02 incl.
   - Limite delle vendite complete (con date di consegna)
   - che hanno un prezzo di vendita
   - i prezzi di vendita sono stati selezionati in base a un criterio di data (più recenti)
 
 - Sono stati calcolati alcuni indicatori chiave per ogni articolo:
-  - **Vendite medie mensili**
+  - **Fatturato medio mensile** (quanto vale economicamente ciascun articolo)
   - **Stabilità delle vendite** (quanto sono regolari mese per mese)
   - **Frequenza di vendita** (in quanti mesi l'articolo è stato venduto)
-  - **Costo medio unitario**
-  - **Lead time medio**
+  - **Costo medio unitario** (il valore di vendita della singola unità)
+  - **Lead Time medio** (quanto tempo intercorre tra ordine e vendita)
 
 #### Istogrammi delle principali variabili
-L'immagine mostra la distribuzione di tutti gli articoli combinati in raggruppamenti secondo le variabili principali. 
-![alt text](image-5.png)
 
+> ![alt text](image-5.png)
+> L'immagine mostra la distribuzione di tutti gli articoli combinati in raggruppamenti secondo le variabili principali. Si notano in particolare:
+> - **Fatturato**: notare la lunga "coda" a destra.
+> - **Volatilità**: notare il peso del "estremamente volatile" a destra.
 
 ### 2. Identificazione di Outliers
 
@@ -50,9 +58,10 @@ Questi articoli verranno trattati con attenzione a parte.
 
 
 #### Proiezione 2D dei principali componenti
-L'immagine distribuisce sul piano cartesiano gli articoli a seconda di etichette: outliers, articoli da tenere e articoli con valori di fatturato estremi. 
-Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rappresentano 1/3. 
-![alt text](image-3.png)
+
+> ![alt text](image-3.png)
+> L'immagine distribuisce sul piano cartesiano gli articoli a seconda di etichette: outliers, articoli da tenere e articoli con valori di fatturato estremi. 
+> Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rappresentano 1/3. 
 
 ### 4. Raggruppamento e Prioritizzazione Visiva
 
@@ -67,7 +76,7 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
   - **Good Candidate**
   - **Borderline**
 
-![alt text](image-1.png)
+> ![alt text](image-1.png)
 
 ---
 
@@ -81,35 +90,39 @@ Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rap
   - Eventuale flag "High Sales" o "Noisy" per articoli particolari
 
 #### Proiezione in 2D dei candidati da mantenere a stock
-L'immagine plotta e raggruppa a seconda delle variabili considerate le 4 'zone'.
-Una revisione manuale degli articoli e delle quantità puo informare la produzione sugli articoli e i volumi da tenere a magazzino.
-![alt text](image-6.png)
+
+> ![alt text](image-6.png)
+> L'immagine plotta e raggruppa a seconda delle variabili considerate le 4 'zone'.
+> Una revisione manuale degli articoli e delle quantità puo informare la produzione sugli articoli e i volumi da tenere a magazzino.
 
 #### Istogrammi delle principali variabili con focus sugli articoli ordinari
-L'immagine mostra come le curve di distribuzione si normalizzino, infatti abbiamo eliminato gli outliers.
-![alt text](image-2.png)
+
+> ![alt text](image-2.png)
+> L'immagine mostra come le curve di distribuzione si normalizzino, infatti abbiamo eliminato gli outliers.
 
 ---
 
 ## 📚 Risorse
 
 #### Lista degli Articoli e dei Parametri
-Lo screenshot mostra le prime 10 righe della tabella contenente:
-- Codice articolo
-- Rating del Candidato da tenere a magazzino: ('top', 'good', 'borderline')
-- Parametri mensili:
-  - 'Volume di vendita', 
-  - 'Costo unitario', 
-  - 'Lead Time', 
-  - 'Fatturato', 
-  - 'Volatilità', 
-  - 'Frequenza'
-- Categoria articolo
 
-![alt text](image_output.png)
+> ![alt text](image_output.png)
+> Lo screenshot mostra le prime 10 righe della tabella contenente:
+> - Codice articolo
+> - Rating del Candidato da tenere a magazzino: ('top', 'good', 'borderline')
+> - Parametri mensili:
+>   - 'Volume di vendita', 
+>   - 'Costo unitario', 
+>   - 'Lead Time', 
+>   - 'Fatturato', 
+>   - 'Volatilità', 
+>   - 'Frequenza'
+> - Categoria articolo
 
-Lo screenshot mostra il conteggio articoli per Tipo e Rating
-![alt text](image_overview.png)
+#### Specchietto Riassuntivo dei Cluster
+
+> ![alt text](image_overview.png)
+> Lo screenshot mostra il conteggio articoli per Tipo e Rating
 
 ## 🎯 Valore per il Business
 
