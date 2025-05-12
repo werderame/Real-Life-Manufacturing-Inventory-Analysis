@@ -19,7 +19,7 @@
 
 ## 📊 Passaggi Principali
 
-### 1. Preparazione dei Dati
+### Preparazione dei Dati
 
 - Il dataset include:
   - Codici articolo
@@ -47,7 +47,7 @@
 > - **Fatturato**: notare la lunga "coda" a destra.
 > - **Volatilità**: notare il peso del "estremamente volatile" a destra.
 
-### 2. Identificazione di Outliers
+### Identificazione di Outliers
 
 - Sono stati evidenziati articoli particolari:
   - **Articoli con vendite molto elevate** (top 1%)
@@ -63,7 +63,7 @@ Questi articoli verranno trattati con attenzione a parte.
 > L'immagine distribuisce sul piano cartesiano gli articoli a seconda di etichette: outliers, articoli da tenere e articoli con valori di fatturato estremi. 
 > Gli outliers rappresentano virca 2/3 del totale; mentre gli altri due gruppi rappresentano 1/3. 
 
-### 4. Raggruppamento e Prioritizzazione Visiva
+### Raggruppamento e Prioritizzazione Visiva
 
 #### Step 1: focus su articoli ordinari (non outliers)
 - Considerando le diverse variabili insieme, abbiamo rappresentato graficamente gli articoli per identificare quelli più vicini al "profilo ideale":
@@ -82,7 +82,7 @@ Questi articoli verranno trattati con attenzione a parte.
 
 ## 📊 Risultato Finale
 
-#### Step 2: inclusione di articoli con vendite estreme. 
+#### Inclusione di articoli con vendite estreme. 
 - Una lista pulita di articoli, etichettati come:
   - "Top Candidate" - Migliori candidati per essere mantenuti a stock
   - "Good Candidate" - Da considerare
